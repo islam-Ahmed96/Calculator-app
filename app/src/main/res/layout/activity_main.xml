@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#414547"
+    >
+
+    <TextView
+        android:id="@+id/tvNumber"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="4dp"
+        android:layout_marginStart="4dp"
+        android:padding="4dp"
+        android:textColor="#000"
+        android:textSize="35sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="4dp"
+        android:hint="Result"
+        android:padding="4dp"
+        android:textColor="#000000"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNumber"
+        />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/ACBut"
+                android:text="AC"
+                android:textSize="25sp"
+                android:layout_width="@dimen/Button_Width"
+                android:layout_height="@dimen/Button_Width"
+                android:background="@color/SecondBut"
+                android:layout_margin="2dp"
+                />
+            <ImageButton
+                android:src="@drawable/ic_baseline_backspace_24"
+                android:id="@+id/deleteNumber"
+                android:textSize="25sp"
+                android:layout_width="@dimen/Button_Width"
+                android:layout_height="@dimen/Button_Width"
+                android:background="@color/SecondBut"
+                android:layout_margin="2dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/CelsiusBut"
+                android:text="%"
+                android:textSize="25sp"
+                android:layout_width="@dimen/Button_Width"
+                android:layout_height="@dimen/Button_Width"
+                android:background="@color/SecondBut"
+                android:layout_margin="2dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/DivisionBut"
+                android:text="/"
+                android:textSize="25sp"
+                android:layout_width="@dimen/Button_Width"
+                android:layout_height="@dimen/Button_Width"
+                android:background="@color/SecondBut"
+                android:layout_margin="2dp"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/SevenBut"
+                android:text="7"
+                android:textSize="25sp"
+                android:layout_width="@dimen/Button_Width"
+                android:layout_height="@dimen/Button_Width"
+                android:background="@color/FirstBut"
+                android:layout_margin="2dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/EightBut"
+                android:text="8"
+                android:textSize="25sp"
+                android:layout_width="@dimen/Button_Width"
+                android:layout_height="@dimen/Button_Width"
+                android:background="@color/FirstBut"
+                android:layout_margin="2dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/NineBut"
+                android:text="9"
+                android:textSize="25sp"
+                android:layout_width="@dimen/Button_Width"
+                android:layout_height="@dimen/Button_Width"
+                android:background="@color/FirstBut"
+                android:layout_margin="2dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/multiplyBut"
+                android:text="*"
+                android:textSize="25sp"
+                android:layout_width="@dimen/Button_Width"
+                android:layout_height="@dimen/Button_Width"
+                android:background="@color/SecondBut"
+                android:layout_margin="2dp"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/FourBut"
+                android:text="4"
+                android:textSize="25sp"
+                android:layout_width="@dimen/Button_Width"
+                android:layout_height="@dimen/Button_Width"
+                android:background="@color/FirstBut"
+                android:layout_margin="2dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/FiveBut"
+                android:text="5"
+                android:textSize="25sp"
+                android:layout_width="@dimen/Button_Width"
+                android:layout_height="@dimen/Button_Width"
+                android:background="@color/FirstBut"
+                android:layout_margin="2dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/SixBut"
+                android:text="6"
+                android:textSize="25sp"
+                android:layout_width="@dimen/Button_Width"
+                android:layout_height="@dimen/Button_Width"
+                android:background="@color/FirstBut"
+                android:layout_margin="2dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/SubtractionBut"
+                android:text="_"
+                android:textSize="30sp"
+                android:layout_width="@dimen/Button_Width"
+                android:layout_height="@dimen/Button_Width"
+                android:background="@color/SecondBut"
+                android:layout_margin="2dp"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/OneBut"
+                android:text="1"
+                android:textSize="25sp"
+                android:layout_width="@dimen/Button_Width"
+                android:layout_height="@dimen/Button_Width"
+                android:background="@color/FirstBut"
+                android:layout_margin="2dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/TwoBut"
+                android:text="2"
+                android:textSize="25sp"
+                android:layout_width="@dimen/Button_Width"
+                android:layout_height="@dimen/Button_Width"
+                android:background="@color/FirstBut"
+                android:layout_margin="2dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/ThreeBut"
+                android:text="3"
+                android:textSize="25sp"
+                android:layout_width="@dimen/Button_Width"
+                android:layout_height="@dimen/Button_Width"
+                android:background="@color/FirstBut"
+                android:layout_margin="2dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/SumBut"
+                android:text="+"
+                android:textSize="25sp"
+                android:layout_width="@dimen/Button_Width"
+                android:layout_height="@dimen/Button_Width"
+                android:background="@color/SecondBut"
+                android:layout_margin="2dp"
+                />
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/ZeroBut"
+                android:text="0"
+                android:textSize="25sp"
+                android:layout_width="93pt"
+                android:layout_height="@dimen/Button_Width"
+                android:background="@color/FirstBut"
+                android:layout_margin="2dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/pointBut"
+                android:text="."
+                android:textSize="45sp"
+                android:layout_width="@dimen/Button_Width"
+                android:layout_height="@dimen/Button_Width"
+                android:background="@color/FirstBut"
+                android:layout_margin="2dp"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/EqualBut"
+                android:text="="
+                android:textSize="25sp"
+                android:layout_width="@dimen/Button_Width"
+                android:layout_height="@dimen/Button_Width"
+                android:background="@color/SecondBut"
+                android:layout_margin="2dp"
+                />
+        </TableRow>
+
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
